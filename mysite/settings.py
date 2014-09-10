@@ -56,10 +56,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+# Django settings.py
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'my_blog_d7',
+        'USER': 'd_webapp',
+        'PASSWORD': 'b5frAph&jEHAsudRec5E',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
