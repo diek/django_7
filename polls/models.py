@@ -24,3 +24,11 @@ class Choice(models.Model):
 
     def __unicode__(self):      # use __str__ for Python3
         return self.choice_text
+
+# >>> q = Question(question_text="What's new?", pub_date=timezone.now())
+
+# # Save the object into the database. You have to call save() explicitly.
+# >>> q.save()
+
+# # Create three choices.
+# >>> q.choice_set.create(choice_text='Not much', votes=0)
