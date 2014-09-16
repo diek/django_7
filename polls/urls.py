@@ -5,6 +5,7 @@ from polls import views
 
 #The next step is to point the root URLconf at the polls.urls module.
 # In mysite/urls.py insert an include(),
+# http://127.0.0.1:8000/polls/3/
 urlpatterns = patterns('',
     # ex
     url(r'^$', views.index, name='index'),
